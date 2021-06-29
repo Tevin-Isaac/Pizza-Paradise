@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Pizza Palace</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Kaushan+Script|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Brawler&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="top col-md-12">
+            <nav class="navbar navbar-expand-sm navbar navbar-dark">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#jumbotron">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#custom-pizza">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#price-content">Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="scroll-down"></div>
+            <div class="back"></div>
+                <div class="col"></div>
+                <h5><b>Pizza Paradise</b></h5>
+            </div><br>
+        </div><br>
+
+        <div class="prices ">
+            <div class="card">
+                <img src="https://images.wallpaperscraft.com/image/pizza_pastries_board_211578_1920x1080.jpg" alt="" width="205%" height="50%">
+            <p class="about">Pizza paradise is all about bringing life to your taste buds.<br> Traditionally, Pizza is often considered to be a savory food made into a round shape and cut into wedges for serving. However, as foods change, Pizza has evolved to be formed into round, rectangular and square shapes with a wide variety of ingredients being used to make the toppings for the baked crust. Sweet pizzas are often served for breakfast, brunch, lunch, dessert, or as an appetizer while the savory varieties are most often served for lunch, dinner, or as a snack.</p><br><br>
+            
+        </div>
+        <div class="card">
+            <img src="https://images.wallpaperscraft.com/image/pizza_food_glass_board_table_73012_1920x1080.jpg" alt="" width="205%" height="50%">
+        <p class="about"> Chicago Pizza<br> 
+            Chicago pizza, also commonly referred to as deep-dish pizza, gets its name from the city it was invented in. During the early 1900’s, Italian immigrants in the windy city were searching for something similar to the Neapolitan pizza that they knew and loved. Instead of imitating the notoriously thin pie, Ike Sewell had something else in mind. He created a pizza with a thick crust that had raised edges, similar to a pie, and ingredients in reverse, with slices of mozzarella lining the dough followed by meat, vegetables, and then topped with a can of crushed tomatoes. This original creation led Sewell to create the now famous chain restaurant, Pizzeria Uno.</p><br><br>
+        
+    </div>
+       
+        <button type="button" class="block">Order Here</button>
+
+
+        <form class="form-group" id="custom-pizza">
+            <div class="order">
+                <div class="row">
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <img src="css/p3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sizes of pizza</h5>
+                                <p class="card-text">Choose the size of Pizza:</p>
+                                <select required class="form-control" id="size">
+                                    <option></option>
+                                    <option value="small-pizza">small (500)</option>
+                                    <option value="medium-pizza">medium (750)</option>
+                                    <option value="large-pizza">large (1000)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <img src="css/p2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Crust</h5>
+                                <p class="card-text">Choose a crust:</p>
+                                <select required class="form-control" id="crust">
+                                    <option></option>
+                                    <option value="cheese-filled">Cheese filled (100)</option>
+                                    <option value="thick">Thick (150)</option>
+                                    <option value="stuffed">Stuffed (150)</option>
+                                    <option value="crispy">Crispy (150)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <img src="css/p1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Toppings</h5>
+                                <p class="card-text">Choose toppings:</p>
+                                <select required class="form-control" id="toppings">
+                                    <option></option>
+                                    <option value="pepperoni">Pepperoni (100)</option>
+                                    <option value="sausage">Sausage (150)</option>
+                                    <option value="bacon">Bacon (200)</option>
+                                    <option value="mushrooms">Mushrooms (150)</option>
+                                    <option value="chicken">Chicken (150)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
+            <input type="number" id="amount" placeholder="Number of pizzas"required>
+        </form>
+        <div class="col-xs-4" id="price-content">
+            <h1 class="page-header">Cart</h1>
+            <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
+            <div id="deliver" class="deliver">
+                <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
+                <form id="address-form">
+                    <div class="col-xs-6">
+                        <label for="first-name"></label>
+                        <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
+                        <button class="btn btn-dark complete" type="submit">Enter</button>
+                        <h3><span id="delivery-option"></span></h3>
+                    </div>
+                </form>
+            </div><br>
+            <button type="btn" class="btn btn-dark" id="checkout-btn">Checkout</button><br><br>
+            <div id="order-details" class="col-xs-12">
+                <ul id="pizza-details"><strong>Your order is: </strong></ul>
+                <h5 id="pizza-details">Thank you and Welcome again!</h5>
+            </div>
+        </div>
+
+          <!-- Home Section 1 -->
+    <!-- Home Section 2 -->
+    <section class="home2_section_area " >
+    	<div class="center">
+            <div class="home_section2_content">
+                    <div class="center-title"><h2 style="color:#4a4a4a">OUR SERVICES</h2><span style="border-bottom-color:#4a4a4a"></span></div><div class="spacecode" style="height:50px;"></div><a href="#"><div class="servicebox boxpattern-2"><div class="serviceboxbg"><img src="http://sktperfectdemo.com/demos/pizzas/wp-content/themes/perfect-pizza/images/ourservices1.png"><h3>Fastest Delivery</h3><p>With electric bikes you we are now equipped  to satisfy you</p></div></div></a><a href="#"><div class="servicebox boxpattern-2"><div class="serviceboxbg"><img src="http://sktperfectdemo.com/demos/pizzas/wp-content/themes/perfect-pizza/images/ourservices2.png"><h3>Friendly Service</h3><p>We have trained our workers to serve you with due dilligence and ethics.We value your customer feedback</p></div></div></a><a href="#"><div class="servicebox boxpattern-2"><div class="serviceboxbg"><img src="http://sktperfectdemo.com/demos/pizzas/wp-content/themes/perfect-pizza/images/ourservices3.png"><h3>Hygenic Food</h3><p>We have made sure we are following the government protocals sinvce its the covid season</p></div></div></a><div class="clear"></div> 
+            </div>
+        </div>
+    </section>
+            <!-- Home Section 2 -->  
+    <!-- Home Section 3 -->
+         <section class="home3_section_area home3_section_area_bg" >
+    	<div class="center">
+            <div class="home_section3_content">
+                    
+						<div style="text-align:center"><img src="https://images.wallpaperscraft.com/image/pizza_piece_pepper_olives_sausage_house_batch_5471_1920x1080.jpg"></div>
+						<div class="spacecode" style="height:20px;"></div>
+						<div class="center-title"><h2 style="color:#ffffff">Our restaurant is excellent in every way<div class="clear"></div> from the friendly service to the delicious<div class="clear"></div> pizzas.</h2></div>              
+            </div>
+        </div>
+    </section>
+            <!-- Home Section 3 -->   
+    <!-- Home Section 4 -->
+         <section class="home4_section_area " >
+    	<div class="center">
+            <div class="home_section4_content">
+                    <div class="center-title"><h2 style="color:#4a4a4a">What our customers say</h2><span style="border-bottom-color:#6e6e6e"></span></div><div style="height:30px;" class="spacecode"></div><div class="testimonialrow"><div class="tstcols3"><div class="testimonial-box"><h6>Martina Andreas</h6>I never knew food would be so much alive when eaten</div><div class="testimonial-inforarea"><div class="box-image"><img src="https://blog.orecx.com/hubfs/at-home-call-center.jpg" width="60" height="60"></div><span class="spancolor"> Jovy Airlines </span><span class="spanblock">excellent service </span></div></div><div class="tstcols3"><div class="testimonial-box"><h6>Jonathan Gloag</h6>This is the best reatauraunt i have visited in my life </div><div class="testimonial-inforarea"><div class="box-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MtMdefGHpJbqkNyYMwJA712NG7Twhizm5gtwql2Q2Gqs8ocKpqH26ZRuI4FvsVGEt08&usqp=CAU" width="60" height="60"></div><span class="spancolor"> Land Technologies </span><span class="spanblock">best taste </span></div></div><div class="tstcols3"><div class="testimonial-box"><h6>Jane Doe</h6>With beautiful and handsome workers and great hygiene the place is a masterpiece. </div><div class="testimonial-inforarea"><div class="box-image"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F91e41345-3d2f-44e4-99ae-106d98528072.jpg?fit=scale-down&source=next&width=700" width="60" height="60"></div><span class="spancolor">Che Che Karatasi </span><span class="spanblock">spot on</span></div></div><div class="clear"></div></div><div class="clear"></div>               
+            </div>
+        </div>
+    </section>
+        <!-- Home Section 4 --> 
+    <!-- Home Section 5 -->
+             <!-- Home Section 5 --> 
+    <!-- Home Section 6 -->
+             <!-- Home Section 6 --> 
+    <!-- Home Section 7 -->
+        <!-- Home Section 7 --> 
+    <!-- Home Section 8 -->
+         <!-- Home Section 8 -->
+    <!-- Home Section 9 -->
+             <!-- Home Section 9 --> 
+    <!-- Home Section 10 -->
+             <!-- Home Section 10 --> 
+    <!-- Home Section 11 -->
+             <!-- Home Section 11 -->   
+	<!-- Home Section 12 -->
+	    	<!-- Home Section 12 --> 
+	<!-- Home Section 13 -->
+	    	<!-- Home Section 13 --> 
+	<!-- Home Section 14 -->
+	    	<!-- Home Section 14 --> 
+	<!-- Home Section 15 -->
+	    	<!-- Home Section 15 --> 
+	<!-- Home Section 16 -->
+	    	<!-- Home Section 16 --> 
+	<!-- Home Section 17 -->
+	    	<!-- Home Section 17 -->                 
+  </div>
+</div>
+
+
+
+
+
+		<a class="to_top "><i class="fa-angle-up fa-2x"></i></a>
+<!--Footer Start-->
+<div class="footer_wrap layer_wrapper ">
+<div id="footer" >
+    <div class="center">
+            
+    	<div class="rowfooter">
+            <div class="clear"></div>
+    		    
+            <div class="footercols3"><h3>ABOUT US</h3><p>We are a pizza restauraunt dedicated to serve you with the best pizza in town.Our chefs ared dedicated to blow your mind
+</p><p>
+Paradise is where you eat from</p></div>
+            <div class="footercols3"><h3>OPENING HOURS</h3><div class="timingbox">
+				<div class="openingday">Monday</div>
+				<div class="openingtime ">10 AM to 7pm</div>
+				<div class="clear"></div>
+				</div><div class="timingbox">
+				<div class="openingday">Tuesday</div>
+				<div class="openingtime ">10 AM to 7pm</div>
+				<div class="clear"></div>
+				</div><div class="timingbox">
+				<div class="openingday">Wednesday</div>
+				<div class="openingtime ">10 AM to 7pm</div>
+				<div class="clear"></div>
+				</div><div class="timingbox">
+				<div class="openingday">Thursday</div>
+				<div class="openingtime ">10 AM to 7pm</div>
+				<div class="clear"></div>
+				</div><div class="timingbox">
+				<div class="openingday">Friday</div>
+				<div class="openingtime ">10 AM to 7pm</div>
+				<div class="clear"></div>
+				</div><div class="timingbox">
+				<div class="openingday">Saturday</div>
+				<div class="openingtime ">10 AM to 7pm</div>
+				<div class="clear"></div>
+				</div><div class="timingbox">
+				<div class="openingday">Sunday</div>
+				<div class="openingtime yes">CLOSED</div>
+				<div class="clear"></div>
+				</div></div>
+            <div class="footercols3"><h3>LOCATION</h3><p>We are located at Weby Towers next to Shanghai town.Do not stress with parking.</p>
+		
+		<p> Phone:+2547141414<br/> Email: <a href="mailto:support@sitename.com">https://github.com/Tevin-creator/Pizza-Paradise</a><br/> Web: <a href="https://github.com/Tevin-creator/Pizza-Paradise">pizza paradise</a></p>
+		 
+		<div class="social-icons">
+            <a href="#" target="_blank" class="fa fa-facebook fa-1x" title="facebook"></a>
+            <a href="#" target="_blank" class="fa fa-twitter fa-1x" title="twitter"></a>
+            <a href="#" target="_blank" class="fa fa-google-plus fa-1x" title="google-plus"></a>
+            <a href="#" target="_blank" class="fa fa-linkedin fa-1x" title="linkedin"></a>
+            <a href="#" target="_blank" class="fa fa-pinterest fa-1x" title="pinterest"></a>
+            <a href="#" target="_blank" class="fa fa-skype fa-1x" title="skype"></a>
+            </div></div>
+                                </div>              
+            <div class="clear"></div> 
+    </div>
+</div>
+<div id="copyright">
+	<div class="center">
+    	<div class="copytext"><div class="left">Copyright All Rights Reserved</div> 
+    </div>
+</div>
+
+<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+<!--Footer END-->
+</div><!--layer_wrapper class END-->
+        </footer>
+        <script src="js/jQuery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/scripts.js"></script>
+    </div>
+</body>
+</html>
