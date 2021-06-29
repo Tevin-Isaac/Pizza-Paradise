@@ -3,6 +3,8 @@
 #### By **Tevin Isaac**
 ## Description
 This is a web application where customers order different sizes of pizzas with one or more toppings. 
+
+![Web_Photo_Editor](https://user-images.githubusercontent.com/81568615/123781092-7eff5700-d8dc-11eb-9427-e0b7e9226760.jpg)
 ## Behaviour Driven Development(BDD)
 |Behaviour| Input| Output|
 |:--------|:-----|:------|
