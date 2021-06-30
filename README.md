@@ -2,9 +2,8 @@
 
 #### By **Tevin Isaac**
 ## Description
-This is a web application where customers order different sizes of pizzas with one or more toppings. 
-
-![Web_Photo_Editor](https://user-images.githubusercontent.com/81568615/123781092-7eff5700-d8dc-11eb-9427-e0b7e9226760.jpg)
+This is a web application where customers order different sizes of pizzas with one or more toppings and crusts. 
+![Screenshot from 2021-06-30 09-38-12](https://user-images.githubusercontent.com/81568615/123915676-6ac56380-d989-11eb-8f26-9ea544800729.png)
 ## Behaviour Driven Development(BDD)
 |Behaviour| Input| Output|
 |:--------|:-----|:------|
@@ -23,7 +22,7 @@ None.
 * Bootstrap - For styling the interface
 * jQuery - To easen use of JavaScript on your website
 ## Live site
-https://github.com/Tevin-creator/Pizza-Paradise.git
+https://tevin-creator.github.io/Pizza-Paradise/
 ## Support and contact details
 ### License.
 MIT Copyright (c) 2021 **[MITlicense](LICENSE)**
